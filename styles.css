@@ -1,0 +1,85 @@
+form {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+form label,
+form input,
+form textarea {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form textarea {
+    height: 100px;
+}
+
+form button {
+    background-color: #333;
+    color:gold;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#centralHub {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.listing {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    flex: 0 0 calc(33.33% - 20px);
+}
+
+.listing img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f1f1f1;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.content {
+    padding: 20px;
+}
+
+/* Add styling for active tab */
+nav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
