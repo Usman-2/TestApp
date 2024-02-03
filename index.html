@@ -1,86 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sportsbetting</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marketplace</title>
-    <link rel="stylesheet" href="styles.css">
-    
-</head>
-
-<header>
-<h1>Marketplace</h1>
-</header>
-
-<nav>
-<a href="#" onclick="showTab('viewListings')">View Listings</a>
-<a href="#" onclick="showTab('createListing')">Create Listing</a>
-<a href="#" onclick="showTab('profile')">Profile</a>
-<a href="login/login.html" onclick="showTab('signIn')">Sign Up/ Login</a>
-</nav>
-
-<div class="content" id="viewListings">
-<h2>View Listings</h2>
-<!-- Add content for View Listings tab -->
+  <header>
+    <h1>Sportsbetting</h1>
+  </header>
+  
+<div class="NavBar">
+  <nav>
+    <a href="#" onclick="showTab('View Bets')">View Bets</a>
+    <a href="#" onclick="showTab('Previous Bets')">Previous Bets</a>
+    <a href="#" onclick="showTab('profile')">Profile</a>
+    <a href="login/login.html" onclick="showTab('signIn')">Sign Up/ Login</a>
+  </nav>
 </div>
 
-<div class="content" id="createListing" style="display: none;">
-<h2>Create Listing</h2>
-<!-- Add content for Create Listing tab -->
-</div>
+  <body>
+    <br />
 
-<div class="content" id="profile" style="display: none;">
-<h2>Profile</h2>
-<!-- Add content for Profile tab -->
-</div>
-
-<div class="content" id="signIn" style="display: none;">
-<h2>Sign In</h2>
-<!-- Add content for Sign In tab -->
-</div>
-
-<script>
-function showTab(tabName) {
-    // Hide all tabs
-    var tabs = document.querySelectorAll('.content');
-    tabs.forEach(function(tab) {
-        tab.style.display = 'none';
-    });
-
-    // Show the selected tab
-    document.getElementById(tabName).style.display = 'block';
-
-    // Remove 'active' class from all tabs
-    var navLinks = document.querySelectorAll('nav a');
-    navLinks.forEach(function(link) {
-        link.classList.remove('active');
-    });
-
-    // Add 'active' class to the selected tab
-    var selectedLink = document.querySelector('nav a[href="#"][onclick*="' + tabName + '"]');
-    selectedLink.classList.add('active');
-}
-</script>
-
-<body>
-    <main>
-        <form id="listingForm">
-            <label for="model">Model:</label>
-            <input type="text" id="model" name="model" required>
-
-            <label for="description">Description:</label>
-            <textarea id="description" name="description" required></textarea>
-
-            <label for="price">Price:</label>
-            <input type="text" id="price" name="price" required>
-
-            <button type="button" onclick="submitListing()">Submit Listing</button>
-        </form>
-
-        <div id="centralHub"></div>
-    </main>
-
-</body>
-
+    <h1>PLACE HOLDER</h1>
+  </body>
 </html>
