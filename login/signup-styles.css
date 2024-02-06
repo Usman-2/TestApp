@@ -2,3 +2,34 @@ body {
     background-color: grey;
 
 }
+
+h2{
+    align-items: center;
+    text-align: center;
+    background: -webkit-linear-gradient(#16c3ef, #df1886);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+form {
+    align-items: center;
+    text-align: center;
+    color: whitesmoke;
+    font-family: sans-serif, Arial;
+    flex: auto;
+    padding: 2px;
+    border: 2px;
+}
+
+#input-container{
+    font-family: sans-serif, Arial;
+}
+
+submit-button {
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: sans-serif, Arial;
+
+}
