@@ -1,28 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sportsbetting</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sportsbook</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
   <header>
-    <h1>Sportsbetting</h1>
+    <h1>Sportsbook</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">NBA</a></li>
+        <li><a href="login/singup.html">Sign Up</a></li>
+        <li><a href="login/login.html">Login</a></li>
+      </ul>
+    </nav>
   </header>
   
-<div class="NavBar">
-  <nav>
-    <a href="#" onclick="showTab('View Bets')">View Bets</a>
-    <a href="#" onclick="showTab('Previous Bets')">Previous Bets</a>
-    <a href="#" onclick="showTab('profile')">Profile</a>
-    <a href="login/singup.html" onclick="showTab('signIn')">Sign Up</a>
-  </nav>
-</div>
+  <main>
+    
+    <section class="upcoming-events" id="upcoming-events">
+      <h2>Upcoming NBA Games</h2>
+      <!-- Upcoming NBA games will be dynamically populated here -->
+    </section>
+  </main>
 
-  <body>
-    <br />
-
-    <h1>PLACE HOLDER</h1>
-  </body>
+  <footer>
+    <p>&copy; 2024 Sportsbook. All rights reserved.</p>
+  </footer>
+  
+  <script src="app.js"></script>
+</body>
 </html>
